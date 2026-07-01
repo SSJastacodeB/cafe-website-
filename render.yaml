@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: serein-cafe
+    runtime: python
+    plan: free
+    buildCommand: python -m py_compile backend/server.py
+    startCommand: python backend/server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: SMTP_FROM
+        sync: false

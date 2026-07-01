@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serein — slow coffee, thoughtful food, and a room made for lingering.">
+  <title>Serein Café — Coffee, beautifully considered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" id="header">
+    <a class="brand" href="#home" aria-label="Serein home"><span>S</span>SEREIN</a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">Our story</a>
+      <a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-trigger" id="cartTrigger" type="button">Order <span id="cartCount">0</span></button>
+    <a class="nav-cta" href="#reservation">Book a table <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Artisan café · Est. 2018</p>
+        <h1>A quieter way<br>to <em>begin.</em></h1>
+        <p class="hero-copy">Thoughtfully sourced coffee, honest seasonal plates, and a room that asks you to stay awhile.</p>
+        <div class="hero-actions"><a class="button light" href="#menu">Explore the menu</a><a class="text-link" href="#about">Discover our story <span>→</span></a></div>
+      </div>
+      <div class="hero-meta"><div><small>Today</small><span>Open until 10 PM</span></div><div><small>Find us</small><span>12 Willow Lane, Bengaluru</span></div></div>
+      <a class="scroll-cue" href="#intro"><span></span>Scroll to discover</a>
+    </section>
+
+    <section class="intro section" id="intro">
+      <div class="section-tag reveal">01 — The feeling</div>
+      <div class="intro-body reveal">
+        <p class="kicker">Not just coffee. A small daily ritual.</p>
+        <h2>Made slowly.<br>Shared <em>generously.</em></h2>
+        <div class="intro-detail"><p>We believe the best cafés feel less like somewhere you go and more like somewhere you belong. Every cup, plate, and corner at Serein is made with that feeling in mind.</p><a class="arrow-link" href="#about">More about Serein <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="menu-heading reveal">
+        <div><p class="eyebrow dark">Made for the moment</p><h2>Our <em>menu.</em></h2></div>
+        <p>Season-led food, small-batch bakes and coffee that celebrates the character of every bean.</p>
+      </div>
+      <div class="filters reveal" role="tablist" aria-label="Menu categories">
+        <button class="active" data-filter="coffee">Coffee</button><button data-filter="breakfast">Breakfast</button><button data-filter="bakery">Bakery</button><button data-filter="seasonal">Seasonal</button>
+      </div>
+      <div class="menu-grid reveal" id="menuGrid"></div>
+      <div class="menu-foot"><p>Vegan, gluten-free, or something else? <span>Just ask — we’re happy to adapt.</span></p><a class="arrow-link" href="#contact">View full menu <span>↗</span></a></div>
+    </section>
+
+    <section class="feature-strip">
+      <div class="feature-image reveal"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85" alt="Warm café interior" loading="lazy"></div>
+      <div class="feature-copy reveal"><p class="eyebrow">Rooted in craft</p><h2>Good things take <em>time.</em></h2><p>Our coffee is roasted in small batches, our bread rests overnight, and our ingredients come from people we know by name. No shortcuts. No unnecessary fuss.</p><div class="stats"><div><strong>14</strong><span>local growers</span></div><div><strong>06</strong><span>origin coffees</span></div><div><strong>100%</strong><span>made in-house</span></div></div></div>
+    </section>
+
+    <section class="story section" id="about">
+      <div class="story-title reveal"><div class="section-tag">02 — Our story</div><h2>Born from a love of<br><em>unhurried mornings.</em></h2></div>
+      <div class="story-grid"><div class="story-image reveal"><img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=1000&q=85" alt="Barista preparing coffee" loading="lazy"></div><div class="story-copy reveal"><p class="dropcap">Serein began with a simple idea: create the kind of place we always searched for — warm, quietly beautiful, and deeply attentive to the little things.</p><p>What started as a six-table coffee bar has grown into a neighbourhood ritual. Our team of bakers, baristas and cooks still approaches each day the same way: with curiosity, care and a healthy respect for good ingredients.</p><blockquote>“There is something lovely about a place that remembers how you take your coffee.”</blockquote><span>— Mira & Arun, founders</span></div></div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="gallery-head reveal"><div><p class="eyebrow dark">A glimpse inside</p><h2>Life at <em>Serein.</em></h2></div><p>@sereincafe</p></div>
+      <div class="gallery-grid reveal">
+        <button class="gallery-item tall"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Freshly brewed coffee" loading="lazy"></button>
+        <button class="gallery-item"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=85" alt="Café table by window" loading="lazy"></button>
+        <button class="gallery-item"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85" alt="Artisan bread" loading="lazy"></button>
+        <button class="gallery-item wide"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85" alt="Coffee beans and pour over" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <div class="reservation-copy reveal"><p class="eyebrow">Your table awaits</p><h2>Stay for a <em>while.</em></h2><p>Whether it’s an early breakfast, a long lunch or coffee that turns into dinner — we’ll save you a seat.</p><div class="hours"><div><span>Mon — Fri</span><strong>7:30 AM — 10 PM</strong></div><div><span>Sat — Sun</span><strong>8:00 AM — 11 PM</strong></div></div></div>
+      <form class="booking-form reveal" id="bookingForm">
+        <label>Name<input type="text" name="name" placeholder="Your name" required></label>
+        <label>Email<input type="email" name="email" placeholder="you@email.com" required></label>
+        <div class="field-row"><label>Date<input type="date" name="date" required></label><label>Time<select name="time" required><option value="">Choose time</option><option>9:00 AM</option><option>11:30 AM</option><option>1:00 PM</option><option>4:30 PM</option><option>7:00 PM</option></select></label></div>
+        <label>Guests<select name="guests" required><option>2 guests</option><option>1 guest</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label>
+        <button class="button dark-button" type="submit">Request a table <span>↗</span></button><p class="form-note">We’ll confirm your table by email shortly.</p>
+      </form>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-title reveal"><p class="eyebrow dark">Come say hello</p><h2>Find your way<br><em>to us.</em></h2></div>
+      <div class="contact-grid reveal"><div><small>Visit</small><p>12 Willow Lane<br>Indiranagar, Bengaluru 560038</p><a href="https://maps.google.com" target="_blank" rel="noreferrer">Get directions ↗</a></div><div><small>Contact</small><p>hello@sereincafe.com<br>+91 80 4567 2210</p><a href="mailto:hello@sereincafe.com">Send an email ↗</a></div><div><small>Follow</small><p>Instagram<br>Pinterest · Spotify</p><a href="#gallery">@sereincafe ↗</a></div></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-top"><a class="brand footer-brand" href="#home"><span>S</span>SEREIN</a><p>Slow coffee. Thoughtful food.<br>A place to simply be.</p><form class="newsletter" id="newsletter"><label for="newsEmail">Notes from the café</label><div><input id="newsEmail" type="email" placeholder="Your email address" required><button aria-label="Subscribe">→</button></div></form></div><div class="footer-bottom"><span>© 2026 Serein Café</span><span>Made with care in Bengaluru</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div></footer>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><p class="eyebrow dark">Order online</p><h2>Your order.</h2></div><button class="cart-close" type="button" aria-label="Close order">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty-cart">Your basket is waiting for something delicious.</p></div>
+    <div class="cart-checkout" id="cartCheckout" hidden><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <form id="orderForm"><div class="field-row"><label>Name<input name="name" required placeholder="Your name"></label><label>Phone<input name="phone" required placeholder="Phone number"></label></div><label>Email<input name="email" type="email" required placeholder="you@email.com"></label><label>How would you like it?<select name="fulfillment"><option value="pickup">Pick up at the café</option><option value="delivery">Local delivery</option></select></label><label>Notes<textarea name="notes" placeholder="Allergies or special requests"></textarea></label><button class="button dark-button" type="submit">Place order <span>↗</span></button></form>
+    </div>
+  </aside><div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <dialog class="lightbox" id="lightbox"><button aria-label="Close image">×</button><img src="" alt=""></dialog>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
